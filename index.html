@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o restaurante japonês Satoshy e pesquise pratos do nosso cardápio.">
+  <title>Satoshy | Restaurante Japonês</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Satoshy</h1>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="pages/cardapio.html">Cardápio</a>
+      <a href="pages/sobre.html">Sobre Nós</a>
+      <a href="pages/contato.html">Contato</a>
+    </nav>
+  </header>
+  <main>
+    <section class="inicio">
+      <p class="subtitulo">RESTAURANTE JAPONÊS</p>
+      <h2>Uma experiência japonesa em cada detalhe</h2>
+      <p>Conheça o Satoshy e encontre seu próximo prato favorito.</p>
+      <a class="botao" href="pages/cardapio.html">Ver cardápio completo</a>
+    </section>
+
+    <section class="busca" aria-labelledby="titulo-busca">
+      <h2 id="titulo-busca">Encontre um prato</h2>
+      <p>Pesquise somente entre as opções que fazem parte do cardápio do Satoshy.</p>
+      <form id="formBusca">
+        <label for="buscaPrato">Nome do prato ou categoria</label>
+        <div class="linha-busca">
+          <input id="buscaPrato" type="search" placeholder="Ex.: salmão, temaki, yakissoba" required>
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
+      <p id="mensagemBusca" class="mensagem" aria-live="polite">Digite um prato para começar a busca.</p>
+      <div id="resultados" class="resultados" aria-live="polite"></div>
+    </section>
+
+    <section class="foto-restaurante">
+      <img src="img/images.jpg" alt="Imagem do restaurante Satoshy">
+    </section>
+  </main>
+  <footer><p>&copy; 2026 Satoshy - Restaurante Japonês</p><p>Qualidade, sabor e tradição.</p></footer>
+</body>
+</html>
